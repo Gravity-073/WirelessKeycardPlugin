@@ -1,0 +1,22 @@
+## Build output
+bin/
+obj/
+out/
+dist/
+
+## Visual Studio / .NET
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.pdb
+*.mdb
+*.nupkg
+packages/
+TestResults/
+
+## OS files
+.DS_Store
+Thumbs.db

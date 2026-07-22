@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\SCPSL\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LabApi">
+      <HintPath>C:\SCPSL\SCPSL_Data\Managed\LabApi.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\SCPSL\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="NorthwoodLib">
+  <HintPath>C:\SCPSL\SCPSL_Data\Managed\NorthwoodLib.dll</HintPath>
+</Reference>
+<Reference Include="UnityEngine.CoreModule">
+  <HintPath>C:\SCPSL\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+</Reference>
+<Reference Include="Mirror">
+  <HintPath>C:\SCPSL\SCPSL_Data\Managed\Mirror.dll</HintPath>
+</Reference>
+  </ItemGroup>
+
+</Project>
