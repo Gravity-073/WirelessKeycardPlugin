@@ -55,6 +55,7 @@ namespace WirelessKeycardPlugin
             {
                
                 foreach (var item in player.Items)
+                
                 {       
                     if (item is KeycardItem keycard)
                     {
@@ -63,9 +64,17 @@ namespace WirelessKeycardPlugin
                         {
                             ev.IsAllowed = true;
                             ev.CanOpen = true;
+                            if(item.Type == ItemType.SurfaceAccessPass)
+                                player.RemoveItem(item);
                             return;
                         }
                      
+                    }
+                    if(item.Type == ItemType.SurfaceAccessPass)
+                    {
+                        ev.IsAllowed = true;
+                        ev.CanOpen = true;
+                        player.RemoveItem(item);
                     }
               
                 }
