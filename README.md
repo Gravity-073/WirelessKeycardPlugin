@@ -29,3 +29,4 @@ Copiez la DLL générée depuis `bin/Release/net481/WirelessKeycardPlugin.dll` d
 ## Notes
 
 Ce plugin est destiné à être utilisé avec une version compatible de LabAPI et de SCP: Secret Laboratory.
+Toutes les portes, gates, checkpoints, lockers et generateurs sont pris en charge mais pas le boutton de la warhead.
