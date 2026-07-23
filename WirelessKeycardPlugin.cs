@@ -13,7 +13,7 @@ namespace WirelessKeycardPlugin
     public class WirelessKeycardPlugin : Plugin
     {
         public override string Name => "WirelessKeycardPlugin";
-        public override string Description => "Permet d'ouvrir les portes avec une carte présente dans l'inventaire.";
+        public override string Description => "Allow you to open doors without holding any card.";
         public override string Author => "Gravity73";
         public override Version Version => new Version(1, 0, 0);
         public override Version RequiredApiVersion => new Version(1, 1, 7);
