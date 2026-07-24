@@ -39,7 +39,6 @@ namespace WirelessKeycardPlugin
 
         private void OnInteractingDoor(PlayerInteractingDoorEventArgs ev)
         {
-         
             var player = ev.Player;
           
 
@@ -82,7 +81,8 @@ namespace WirelessKeycardPlugin
 
             if (ev.Door.DoorName == LabApi.Features.Enums.DoorName.LczCheckpointA ||
                 ev.Door.DoorName == LabApi.Features.Enums.DoorName.LczCheckpointB ||
-                ev.Door.DoorName == LabApi.Features.Enums.DoorName.HczCheckpoint)
+                ev.Door.DoorName == LabApi.Features.Enums.DoorName.HczCheckpoint || 
+                ev.Door.DoorName == LabApi.Features.Enums.DoorName.None)
             {
                 
                 foreach (var item in player.Items)
@@ -110,7 +110,7 @@ namespace WirelessKeycardPlugin
                 
             }
             
-        }
+        }   
 
         private void OnUnlockingGenerator(PlayerUnlockingGeneratorEventArgs ev)
         {
